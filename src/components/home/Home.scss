@@ -1,0 +1,62 @@
+@import '../../styles/settings';
+@import '../../styles/animation';
+
+.home-component {
+  background-image: url('../../images/home/bcg-home-below-640.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+
+  .mobile-comp {
+    height: calc(100vh - 160px);
+  }
+
+  .logo-component, .header-component {
+    margin: 0 auto $base-font-size * 5 auto;
+  }
+}
+
+@include susy-breakpoint($third-breakpoint) {
+  .home-component {
+    background-image: url('../../images/home/bcg-home-640-960.jpg');
+  }
+}
+
+@include susy-breakpoint($fourth-breakpoint) {
+  .home-component {
+    background-image: url('../../images/home/bcg-home-960-1280.jpg');
+    .logo-component, .header-component {
+      margin: $base-font-size * 8 auto;
+    }
+    .arrowDown {
+      animation: arrowBounce 2.5s ease-in-out infinite;
+      height: $base-font-size * 2.5;
+      cursor: pointer;
+    }
+    .header1 {
+      margin: $base-font-size * 24 auto 0 auto;
+    }
+    .header2 {
+      margin: $base-font-size * 55 auto 0 auto;
+    }
+    .logo {
+      margin: $base-font-size * 50 auto 0 auto;
+    }
+    .btn {
+      margin-bottom: $base-font-size * 15;
+    }
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+  .home-component {
+    background-image: url('../../images/home/bcg-home-over-1280.jpg');
+  }
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+  .home-component {
+    background-size: 100% 100%;
+  }
+}

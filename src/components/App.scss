@@ -1,0 +1,26 @@
+@import '../styles/animation';
+@import '../styles/settings';
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  background: $third-color;
+  font-family: 'RobotoMono', Arial;
+  font-weight: bold;
+  color: $primary-color;
+}
+
+.component {
+  width: span(12);
+  padding-top: $base-font-size * 5;
+  padding-bottom: 80px;
+}

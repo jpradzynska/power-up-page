@@ -1,0 +1,52 @@
+@import '../../styles/settings';
+
+.teamMember-component {
+  width: span(11);
+  text-align: center;
+  padding: $base-font-size * 2 $base-font-size;
+  margin: 0 auto;
+  img {
+    width: span(7);
+  }
+}
+
+@include susy-breakpoint($first-breakpoint) {
+}
+
+@include susy-breakpoint($second-breakpoint) {
+  .teamMember-component {
+    img {
+      width: span(5);
+    }
+  }
+}
+
+@include susy-breakpoint($third-breakpoint) {
+  .teamMember-component {
+    img {
+      width: span(3);
+    }
+  }
+}
+
+@include susy-breakpoint($fourth-breakpoint) {
+  .teamMember-component {
+    width: span(4);
+    display: inline-block;
+    margin: $base-font-size * 5 auto;
+    img {
+      width: span(6);
+    }
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+  .teamMember-component {
+    img {
+      width: span(4);
+    }
+  }
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+}

@@ -1,0 +1,49 @@
+@import '../../styles/settings';
+
+.button-component {
+  margin: $base-font-size * 3 auto;
+  text-align: center;
+  display: block;
+  width: span(12);
+  img {
+    width: span(7);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  img:hover {
+    background-color: #F56E00;
+  }
+}
+
+@include susy-breakpoint($first-breakpoint) {
+}
+
+@include susy-breakpoint($second-breakpoint) {
+}
+
+@include susy-breakpoint($third-breakpoint) {
+  .button-component {
+    img {
+      width: span(4);
+    }
+  }
+}
+
+@include susy-breakpoint($fourth-breakpoint) {
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+  .button-component {
+    img {
+      width: span(3);
+    }
+  }
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+  .button-component {
+    img {
+      width: span(2);
+    }
+  }
+}

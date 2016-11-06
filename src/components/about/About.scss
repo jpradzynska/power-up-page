@@ -1,0 +1,17 @@
+@import '../../styles/settings';
+
+.about-component {
+  .facts {
+    background-color: $third-color;
+    width: span(12);
+    margin-bottom: $base-font-size * 15;
+    padding-bottom: $base-font-size * 4;
+    display: table;
+  }
+
+  .team {
+    background-color: $third-color;
+    width: span(12);
+    margin-bottom: $base-font-size * 15;
+  }
+}

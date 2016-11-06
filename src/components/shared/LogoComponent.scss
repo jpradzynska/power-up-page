@@ -1,0 +1,50 @@
+@import '../../styles/settings';
+
+.logo-component {
+  margin: $base-font-size * 8 auto;
+  text-align: center;
+  display: block;
+  width: span(12);
+  img {
+    width: span(8);
+    height: auto;
+  }
+}
+
+@include susy-breakpoint($first-breakpoint) {
+}
+
+@include susy-breakpoint($second-breakpoint) {
+  .logo-component {
+    img {
+      width: span(7);
+    }
+  }
+}
+
+@include susy-breakpoint($third-breakpoint) {
+  .logo-component {
+    img {
+      width: span(5);
+    }
+  }
+}
+
+@include susy-breakpoint($fourth-breakpoint) {
+  .logo-component {
+    img {
+      width: span(4);
+    }
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+  .logo-component {
+    img {
+      width: span(3);
+    }
+  }
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+}

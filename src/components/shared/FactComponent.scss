@@ -1,0 +1,47 @@
+@import '../../styles/settings';
+
+.fact-component {
+  width: span(11);
+  text-align: center;
+  margin: 0 auto;
+  img {
+    width: span(10);
+  }
+  p {
+    margin-top: 0;
+  }
+}
+
+@include susy-breakpoint($first-breakpoint) {
+  .fact-component {
+    img {
+      width: span(8);
+    }
+  }
+}
+
+@include susy-breakpoint($second-breakpoint) {
+  .fact-component {
+    width: span(6);
+    display: table-cell;
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+@include susy-breakpoint($third-breakpoint) {
+
+}
+
+@include susy-breakpoint($fourth-breakpoint) {
+  .fact-component {
+    width: span(3);
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+}

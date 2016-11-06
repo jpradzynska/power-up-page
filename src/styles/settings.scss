@@ -1,0 +1,45 @@
+@import "~susy/sass/susy";
+@import "webfonts";
+@include fontFace('RobotoMono', 'fonts/RobotoMono/roboto-mono_regular');
+@include fontFace('RobotoMono', 'fonts/RobotoMono/roboto-mono_bold', normal, bold);
+
+$base-font-size: 1rem;
+$base-line-height: $base-font-size * 1.2;
+
+//MEDIA QUERIES
+$first-breakpoint: 20em;
+$second-breakpoint: 30em;
+$third-breakpoint: 40em;
+$fourth-breakpoint: 60em;
+$fifth-breakpoint: 80em;
+$sixth-breakpoint: 120em;
+
+//SUSY
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  global-box-sizing: border-box,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: overlay,
+    toggle: top right
+  ),
+);
+
+//MODULAR SCALE
+$ms-base: 1rem;
+$ms-ratio: 1.5;
+
+$ms-range:
+  1.333   $first-breakpoint,
+  $ms-ratio  $fourth-breakpoint;
+
+//COLORS
+$primary-color: #fff;
+$secondary-color: #191919;
+$third-color: #0E0D2D;
+$fourth-color: #FF4B00;

@@ -1,0 +1,25 @@
+@import '../../styles/settings';
+
+.mainMenuLink {
+  color: $primary-color;
+  text-decoration: none;
+  display: block;
+  transition: transform 2s ease-in-out;
+}
+
+.mainMenuLink:hover{
+  background-color: #333333;
+}
+
+.active  {
+  color: red;
+}
+
+@include susy-breakpoint($second-breakpoint) {
+  .mainMenuLink {
+    display: inline;;
+  }
+  .mainMenuLink:hover {
+    background: inherit;
+  }
+}

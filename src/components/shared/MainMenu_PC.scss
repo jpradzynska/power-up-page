@@ -1,0 +1,62 @@
+@import '../../styles/settings';
+
+.mainMenuPCHeader {
+  display: none;
+}
+
+@include susy-breakpoint($second-breakpoint) {
+  .mainMenuPCHeader {
+    position: fixed;
+    z-index: 9999;
+    display: table;
+    top: 0;
+    width: span(12);
+    height: $base-font-size * 5;
+    background: $secondary-color;
+    font-size: $base-font-size * 1.2;
+    border-bottom: 2px solid $primary-color;
+
+    .mainMenu {
+      display: table-cell;
+      vertical-align: middle;
+      width: span(5);
+      nav {
+        list-style-type: none;
+        li {
+          display: inline;
+          padding: 0 $base-font-size;
+          transition: all .4s ease;
+        }
+        li:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .leftMainMenu {
+      nav {
+        text-align: right;
+      }
+    }
+
+    .rightMainMenu {
+      nav {
+        text-align: left;
+      }
+    }
+
+    .diamondMenuIcon {
+      display: table-cell;
+      position: relative;
+      vertical-align: middle;
+      width: span(2);
+      position: relative;
+      img {
+        position: absolute;
+        left:50%;
+        transform: translate(-50%,-35%);
+        height: $base-font-size * 5;
+      }
+    }
+  }
+}

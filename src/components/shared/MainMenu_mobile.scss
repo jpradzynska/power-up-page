@@ -1,0 +1,74 @@
+@import '../../styles/settings';
+@import '../../styles/animation';
+
+.mainMenuMobileHeader {
+  .mainMenuLabel {
+    z-index: 9999;
+    position: fixed;
+    width: span(12);
+    height: $base-font-size * 5;
+    top: 0;
+    background: $secondary-color;
+    border-bottom: 1px solid $primary-color;
+
+    .mainMenuImg {
+      width: span(9);
+      height: 100%;
+      display: inline-block;
+      text-align: left;
+
+      img {
+        height: $base-font-size * 3;
+        width: auto;
+        margin: $base-font-size * 0.5 0 0 $base-font-size;
+      }
+    }
+
+    .mainMenuBtn {
+      width: span(3);
+      display: inline-block;
+      text-align: right;
+
+      span {
+        cursor: pointer;
+        color: $primary-color;
+        font-size: $base-font-size * 3.0;
+        padding-right: $base-font-size * 1.5;
+      }
+    }
+  }
+
+  .mainMenuContent {
+    display: table;
+    z-index: 9990;
+    width: span(12);
+    position: fixed;
+    height: 100vh;
+    background: $secondary-color;
+    transition: transform 1.3s ease-in-out;
+    transform: translateY(-100%);
+
+    nav {
+      display: table-cell;
+      vertical-align: middle;
+      list-style-type: none;
+      text-align: center;
+
+      li {
+        font-size: $base-font-size * 2;
+        transition: all .4s ease-in-out;
+        line-height: $base-line-height * 3;
+      }
+    }
+  }
+
+  .mainMenuOpen {
+    transform: translateY(0);
+  }
+}
+
+@include susy-breakpoint($second-breakpoint) {
+  .mainMenuMobileHeader {
+    display: none;
+  }
+}

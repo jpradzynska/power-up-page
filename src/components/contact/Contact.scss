@@ -1,0 +1,58 @@
+@import '../../styles/settings';
+
+.contact-component {
+  .contact-address {
+    background-color: $third-color;
+    text-align: center;
+    padding: $base-font-size 0;
+    margin-bottom: $base-font-size * 15;
+
+    > div {
+
+      .address, .press {
+        margin: $base-font-size * 4 auto;
+        p {
+          span {
+            color: $fourth-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+}
+
+@include susy-breakpoint($second-breakpoint) {
+}
+
+@include susy-breakpoint($third-breakpoint) {
+}
+
+@include susy-breakpoint($fourth-breakpoint) {
+  .contact-component {
+
+    .contact-address {
+      margin: $base-font-size auto;
+      display: inline-block;
+      width: span(12);
+
+      > div {
+        display: table;
+        width: span(12);
+
+        .address, .press {
+          display: table-cell;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+}

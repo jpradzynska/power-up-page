@@ -1,0 +1,46 @@
+@import '../../styles/settings';
+
+.footer {
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+  background-image: url('../../images/footer/bcg-footer-below-640.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+  text-align: center;
+  font-size: $base-font-size;
+  color: $primary-color;
+  display: table;
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 $base-font-size;
+  }
+}
+
+@include susy-breakpoint($third-breakpoint) {
+  .footer {
+    background-image: url('../../images/footer/bcg-footer-640-960.jpg');
+  }
+}
+
+@include susy-breakpoint($fourth-breakpoint) {
+  .footer {
+    background-image: url('../../images/footer/bcg-footer-960-1280.jpg');
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+  .footer {
+    background-image: url('../../images/footer/bcg-footer-over-1280.jpg');
+  }
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+  .footer {
+    background-size: 100% 100%;
+  }
+}
