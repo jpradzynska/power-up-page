@@ -108,8 +108,8 @@ class About extends React.Component {
             <FactComponent data={fact1}><span>Power UP Game Studio</span><br />Based in Gdańsk, Poland</FactComponent>
             <FactComponent data={fact2}>January 1, 2016</FactComponent>
             <FactComponent data={fact3}>
-              <a href="http://example.com/" target="_blank"><img alt="platform" className="platformIcon" src="../../images/about/google-play-icon.svg" /></a>
-              <a href="http://example.com/" target="_blank"><img alt="platform" className="platformIcon" src="../../images/about/apple-store-icon.svg" /></a>
+              <a className="google-play-icon" href="http://example.com/" target="_blank"></a>
+              <a className="app-store-icon" href="http://example.com/" target="_blank"></a>
             </FactComponent>
             <FactComponent data={fact4} />
           </div>

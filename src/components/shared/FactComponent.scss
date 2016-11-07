@@ -8,10 +8,26 @@
     width: span(5);
     margin-top: $base-font-size * 3;
   }
-  .platformIcon {
-    width: $base-font-size * 3;
-    padding: 0 $base-font-size * 0.5;
-    cursor: pointer;
+  .google-play-icon, .app-store-icon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin: 0 $base-font-size * 0.5;
+    transition: all 0.5s;
+  }
+  .google-play-icon {
+    background: url('../../images/about/google-play-icon.svg') no-repeat;
+  }
+  .google-play-icon:hover {
+    background: url('../../images/about/google-play-icon-hover.svg') no-repeat;
+    transform: scale(1.1,1.1);
+  }
+  .app-store-icon {
+    background: url('../../images/about/apple-store-icon.svg') no-repeat;
+  }
+  .app-store-icon:hover {
+    background: url('../../images/about/apple-store-icon-hover.svg') no-repeat;
+    transform: scale(1.1,1.1);
   }
   span {
     color: $fourth-color;
