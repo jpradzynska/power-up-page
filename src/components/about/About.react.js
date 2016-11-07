@@ -7,8 +7,6 @@ import LogoComponent from '../shared/LogoComponent.react';
 import TeamMemberComponent from '../shared/TeamMemberComponent.react';
 import TrianglesTitleComponent from '../shared/TrianglesTitleComponent.react';
 import './About.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './About.scss';
 
 const breakpoints = {
   mobile: 0,
@@ -17,7 +15,6 @@ const breakpoints = {
   desktop: 1280
 };
 
-// @cssmodules(styles)
 class About extends React.Component {
 
   componentWillMount() {

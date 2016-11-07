@@ -1,14 +1,7 @@
 import React from 'react';
 import './TrianglesTitleComponent.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './TrianglesTitleComponent.scss';
 
-// @cssmodules(styles)
 class TrianglesTitleComponent extends React.Component {
-
-  // propTypes: {
-  //   titleText: React.PropTypes.string.isRequired
-  // }
 
   render() {
     return (

@@ -1,10 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import './NavLink.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './NavLink.scss';
 
-// @cssmodules(styles)
 class NavLink extends React.Component {
 
   render() {

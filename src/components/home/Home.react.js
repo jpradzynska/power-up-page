@@ -1,11 +1,10 @@
 import React from 'react';
 import { layoutGenerator } from 'react-break';
+import { Element, scroller } from 'react-scroll';
 import ButtonComponent from '../shared/ButtonComponent.react';
 import HeaderComponent from '../shared/HeaderComponent.react';
 import LogoComponent from '../shared/LogoComponent.react';
 import './Home.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './Home.scss';
 
 const layout = layoutGenerator({
   mobile: 0,
@@ -15,8 +14,14 @@ const layout = layoutGenerator({
 const OnMobile = layout.is('mobile');
 const OnDesktop = layout.is('desktop');
 
-// @cssmodules(styles)
 class Home extends React.Component {
+
+  handleScroll(target) {
+    const documentElement = document.documentElement;
+    const body = document.getElementsByTagName('body')[0];
+    const height = window.innerHeight || documentElement.clientHeight || body.clientHeight;
+    scroller.scrollTo(target, {duration: 1500, delay: 100, smooth: true, offset: -height / 2});
+  }
 
   render() {
     const BUTTON_HREF = '/games';
@@ -39,20 +44,24 @@ class Home extends React.Component {
             <HeaderComponent headerText={HEADER_TEXT_1} />
           </div>
 
-          <img alt="arrow" className="arrowDown" src="../../images/home/scroll.svg" />
+          <img alt="arrow" className="arrowDown" onClick={() => { this.handleScroll('target1'); }} src="../../images/home/scroll.svg" />
 
           <div className="header2">
             <HeaderComponent headerText={HEADER_TEXT_2} />
           </div>
 
-          <img alt="arrow" className="arrowDown" src="../../images/home/scroll.svg" />
+          <Element name="target1">
+            <img alt="arrow" className="arrowDown" onClick={() => { this.handleScroll('target2'); }} src="../../images/home/scroll.svg" />
+          </Element>
 
           <div className="logo">
             <LogoComponent />
           </div>
 
           <div className="btn">
-            <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG}/>
+            <Element name="target2">
+              <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG}/>
+            </Element>
           </div>
         </OnDesktop>
       </div>

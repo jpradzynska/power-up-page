@@ -1,9 +1,6 @@
 import React from 'react';
 import './LogoComponent.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './LogoComponent.scss';
 
-// @cssmodules(styles)
 class LogoComponent extends React.Component {
 
   render() {

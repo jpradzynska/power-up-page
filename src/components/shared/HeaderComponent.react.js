@@ -1,9 +1,6 @@
 import React from 'react';
 import './HeaderComponent.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './HeaderComponent.scss';
 
-// @cssmodules(styles)
 class HeaderComponent extends React.Component {
 
   render() {

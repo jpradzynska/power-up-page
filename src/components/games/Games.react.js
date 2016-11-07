@@ -5,8 +5,6 @@ import HeaderComponent from '../shared/HeaderComponent.react';
 import LogoComponent from '../shared/LogoComponent.react';
 import TrianglesTitleComponent from '../shared/TrianglesTitleComponent.react';
 import './Games.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './Games.scss';
 
 const breakpoints = {
   mobile: 0,
@@ -15,7 +13,6 @@ const breakpoints = {
   desktop: 1280
 };
 
-// @cssmodules(styles)
 class Games extends React.Component {
 
   componentWillMount() {

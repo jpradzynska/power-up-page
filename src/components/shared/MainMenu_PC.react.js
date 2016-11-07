@@ -2,10 +2,7 @@ import React from 'react';
 import NavLink from './NavLink.react';
 import diamondImg from '../../images/power-up-diamond.svg';
 import './MainMenu_PC.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './MainMenu_PC.scss';
 
-// @cssmodules(styles)
 class MainMenuPc extends React.Component {
 
   render() {

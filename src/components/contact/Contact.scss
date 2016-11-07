@@ -42,7 +42,7 @@
   .contact-component {
 
     .contact-address {
-      margin: $base-font-size auto;
+      margin: $base-font-size auto $base-font-size * 15 auto;
       display: inline-block;
       width: span(12);
 

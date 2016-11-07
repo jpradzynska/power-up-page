@@ -1,10 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import './ButtonComponent.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './ButtonComponent.scss';
 
-// @cssmodules(styles)
 class ButtonComponent extends React.Component {
 
   render() {
@@ -18,11 +15,11 @@ class ButtonComponent extends React.Component {
   }
 }
 
-// ButtonComponent.displayName = 'SharedButtonComponent';
+ButtonComponent.displayName = 'SharedButtonComponent';
 ButtonComponent.propTypes = {
   btnAddress: React.PropTypes.string.isRequired,
   btnImg: React.PropTypes.string.isRequired
 };
-// ButtonComponent.defaultProps = {};
+ButtonComponent.defaultProps = {};
 
 export default ButtonComponent;

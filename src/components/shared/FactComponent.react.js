@@ -1,9 +1,6 @@
 import React from 'react';
 import './FactComponent.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './FactComponent.scss';
 
-// @cssmodules(styles)
 class FactComponent extends React.Component {
 
   render() {

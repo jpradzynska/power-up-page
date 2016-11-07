@@ -1,9 +1,6 @@
 import React from 'react';
 import './TeamMemberComponent.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './TeamMemberComponent.scss';
 
-// @cssmodules(styles)
 class TeamMemberComponent extends React.Component {
 
   render() {

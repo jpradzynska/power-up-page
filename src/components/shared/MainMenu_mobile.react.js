@@ -1,10 +1,7 @@
 import React from 'react';
 import NavLink from './NavLink.react';
 import './MainMenu_mobile.scss';
-// import cssmodules from 'react-css-modules';
-// import styles from './MainMenu_mobile.scss';
 
-// @cssmodules(styles)
 class MainMenuMobile extends React.Component {
 
   handleSlideMainMenu(e) {
