@@ -44,8 +44,8 @@ class Contact extends React.Component {
   render() {
     // write the title here
     const TRIANGLE_TITLE = 'INFO';
-    const BUTTON_HREF = 'mailto:contact@powerupgamestudio.com';
-    const BUTTON_IMG = '../../images/contact/cta-email.svg';
+    const BUTTON_HREF = 'mailto:contact@powerupgamestudio.com?subject=Contact%20Us!';
+    const BUTTON_IMG = '../../images/cta-email.svg';
     const HEADER_TEXT = 'Contact';
 
     let bcgSource;
@@ -75,12 +75,11 @@ class Contact extends React.Component {
               <div className="address">
                 <p><span>Address:</span></p>
                 <p>ul. Bora Komorowskiego 19B</p>
-                <p>80-462 Gdańsk</p>
-                <p>Poland</p>
+                <p>80-462 Gdańsk, Poland</p>
               </div>
               <div className="press">
                 <p><span>Press / Business contact</span></p>
-                <p>contact@powerupgamestudio.com</p>
+                <p><a href={BUTTON_HREF}>contact@powerupgamestudio.com</a></p>
               </div>
             </div>
             <EmailButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG} />

@@ -47,7 +47,7 @@ class Games extends React.Component {
     const TRIANGLE_TITLE_2 = 'ORBITRON ARCADE';
     const TRIANGLE_TITLE_3 = 'CONTACT';
     const BUTTON_HREF = '/contact';
-    const BUTTON_IMG = '../../images/games/cta-contact.svg';
+    const BUTTON_IMG = '../../images/cta-contact.svg';
     const HEADER_TEXT = 'Releases';
 
     let bcgSource;

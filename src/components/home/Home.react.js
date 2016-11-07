@@ -20,7 +20,7 @@ class Home extends React.Component {
 
   render() {
     const BUTTON_HREF = '/games';
-    const BUTTON_IMG = '../../images/home/cta-projects.svg';
+    const BUTTON_IMG = '../../images/cta-projects.svg';
     const HEADER_TEXT_1 = 'Pixel based lifeforms';
     const HEADER_TEXT_2 = 'Presented by';
 

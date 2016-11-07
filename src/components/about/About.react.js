@@ -49,7 +49,7 @@ class About extends React.Component {
     const TRIANGLE_TITLE_2 = 'OUR TEAM';
     const TRIANGLE_TITLE_3 = 'RELEASES';
     const BUTTON_HREF = '/games';
-    const BUTTON_IMG = '../../images/about/cta-projects.svg';
+    const BUTTON_IMG = '../../images/cta-projects.svg';
     const HEADER_TEXT = 'About Power Up Game Studio';
     const person1 = {
       imgSrc: '../../images/about/portrait-patryk.svg',
@@ -107,7 +107,10 @@ class About extends React.Component {
           <div className="facts">
             <FactComponent data={fact1}><span>Power UP Game Studio</span><br />Based in Gdańsk, Poland</FactComponent>
             <FactComponent data={fact2}>January 1, 2016</FactComponent>
-            <FactComponent data={fact3} />
+            <FactComponent data={fact3}>
+              <a href="http://example.com/" target="_blank"><img alt="platform" className="platformIcon" src="../../images/about/google-play-icon.svg" /></a>
+              <a href="http://example.com/" target="_blank"><img alt="platform" className="platformIcon" src="../../images/about/apple-store-icon.svg" /></a>
+            </FactComponent>
             <FactComponent data={fact4} />
           </div>
           <TrianglesTitleComponent titleText={TRIANGLE_TITLE_2}/>

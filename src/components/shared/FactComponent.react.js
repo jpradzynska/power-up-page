@@ -9,7 +9,7 @@ class FactComponent extends React.Component {
   render() {
     return (
       <div className="fact-component">
-        <img alt="Team Member" src={this.props.data.imgSrc} />
+        <img alt="Fact" className="factImg" src={this.props.data.imgSrc} />
         <p>{this.props.data.title}</p>
         {this.props.children}
       </div>

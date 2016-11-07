@@ -4,20 +4,21 @@
   width: span(11);
   text-align: center;
   margin: 0 auto;
-  img {
-    width: span(10);
+  .factImg {
+    width: span(5);
+    margin-top: $base-font-size * 3;
   }
-  p {
-    margin-top: 0;
+  .platformIcon {
+    width: $base-font-size * 3;
+    padding: 0 $base-font-size * 0.5;
+    cursor: pointer;
+  }
+  span {
+    color: $fourth-color;
   }
 }
 
 @include susy-breakpoint($first-breakpoint) {
-  .fact-component {
-    img {
-      width: span(8);
-    }
-  }
 }
 
 @include susy-breakpoint($second-breakpoint) {
